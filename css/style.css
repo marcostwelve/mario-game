@@ -5,6 +5,10 @@
   font-family: 'Courier New', Courier, monospace;
 }
 
+body {
+  overflow: hidden;
+}
+
 .game-board {
   width: 800px;
   height: 500px;
