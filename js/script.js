@@ -46,7 +46,7 @@ const loop = setInterval(() => {
     reload.classList.remove("hidden");
   }
 
-  score.innerHTML = `Score ${count}`;
+  score.innerHTML = `<p>Score ${count}</p>`;
 
 }, 10);
 
@@ -65,4 +65,8 @@ reload.addEventListener("click", () => {
 });
 
 
-document.addEventListener("keydown", jump);
+document.addEventListener("keydown", (e) => {
+  if((e.code === "ArrowUp") || (e.code === "Space")) {
+    jump();
+  }
+});
