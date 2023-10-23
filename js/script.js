@@ -70,3 +70,5 @@ document.addEventListener("keydown", (e) => {
     jump();
   }
 });
+
+document.addEventListener("touchstart", jump);
